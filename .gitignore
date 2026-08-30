@@ -1,0 +1,39 @@
+# ---- firmware (PlatformIO) ----
+# .pio holds build output AND every downloaded library and toolchain package.
+# It is large, machine-specific, and fully reproducible from platformio.ini.
+firmware/.pio/
+firmware/.vscode/
+firmware/dependencies.lock
+
+# ---- Android ----
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+android/.kotlin/
+# Machine-specific SDK path.
+android/local.properties
+*.apk
+*.aab
+
+# gradle-wrapper.jar IS committed on purpose: it makes the build reproducible
+# without a system Gradle install, which is the standard for Android projects.
+
+# ---- Secrets ----
+# android/gradle.properties is tracked, but as a TEMPLATE with empty key
+# values. Put real keys in ~/.gradle/gradle.properties, which Gradle reads for
+# every project and which lives outside any repo:
+#
+#   MAPTILER_KEY=...
+#   GRAPHHOPPER_KEY=...
+#
+# Never fill the values in the tracked file - once pushed, a key is in the
+# history for good.
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

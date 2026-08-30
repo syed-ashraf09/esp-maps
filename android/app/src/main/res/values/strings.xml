@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">esp-maps</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="status_idle">Not running</string>
+    <string name="status_running">Running — check the display</string>
+    <string name="no_maptiler_key">No MapTiler key set. Add MAPTILER_KEY to gradle.properties and rebuild.</string>
+
+    <string name="maps_heading">Google Maps guidance</string>
+    <string name="maps_status_off">Notification access NOT granted — no turn guidance</string>
+    <string name="maps_status_on">Connected — start a trip in Google Maps</string>
+    <string name="maps_grant">Grant notification access</string>
+    <string name="maps_explain">Turn directions are read from Google Maps\' navigation notification, so the display follows any trip you start there automatically. Google does not expose its route line to other apps, so the highlighted route comes from the destination below when you set one.</string>
+
+    <string name="manual_heading">Route line (optional)</string>
+    <string name="manual_explain">Draws a highlighted route on the map. Only needed if you want the route line — the map, your position and turn directions all work without it.</string>
+    <string name="manual_go">Draw route</string>
+
+    <string name="demo_heading">Simulate a drive</string>
+    <string name="demo_explain">Plays a synthetic position along the route above at 50 km/h, with matching turn guidance. Exercises tile loading, heading-up rotation, the route line and the turn banner without leaving your desk. Draw a route first.</string>
+    <string name="demo_go">Start / stop simulation</string>
+</resources>
